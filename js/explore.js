@@ -1,4 +1,7 @@
-export default function exploreImgChange() {
+export default exploreImgChange();
+
+
+function exploreImgChange() {
     let resizableBox = document.querySelector('.for-line-separation');
     let handle = resizableBox.querySelector('.resize-handle');
     let container = document.querySelector('.right-explore');
