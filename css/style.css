@@ -10,6 +10,16 @@ a {
     color: white;
 }
 
+.tours {
+    width: 100%;
+    height: 100%;
+}
+
+.tours-body {
+    width: 99.2vw;
+    height: 100vh;
+}
+
 h2 {
     font-family: 'Forum', sans-serif;
     font-weight: 400;
@@ -93,6 +103,9 @@ header {
 }
 
 .welcome-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #710707;
     width: 360px;
     height: 75px;
@@ -243,31 +256,6 @@ header {
     color: #9d8665;
 }
 
-.visiting h3 {
-    font-family: 'Forum', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: auto;
-    letter-spacing: 5px;
-    padding-top: 25px;
-}
-
-.visiting .first-p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 22px;
-    line-height: 100%;
-    padding-top: 10px;
-}
-
-.visiting .last-p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 18px;
-    line-height: 100%;
-    padding-top: 10px;
-}
-
 .container-visiting {
     flex-direction: column;
 }
@@ -294,6 +282,34 @@ header {
 
 .place {
     margin-top: 70px;
+}
+
+.place h3 {
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: auto;
+    letter-spacing: 5px;
+    padding-top: 25px;
+    color: #030303;
+}
+
+.place .first-p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 100%;
+    padding-top: 10px;
+    color: #030303;
+}
+
+.place .last-p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 100%;
+    padding-top: 10px;
+    color: #030303;
 }
 
 .explore {
