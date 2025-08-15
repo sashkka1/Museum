@@ -10,7 +10,6 @@ function randomGalary() {
         const img = document.createElement('img');
         img.src = item;
         img.alt = "gallery img";
-        console.log(img);
         pictureGalary.appendChild(img);
     });
 };

@@ -1,6 +1,7 @@
 import exploreImgChange from './explore.js';
 import videoPlayer from './video.js';
 import randomGalary from './galery.js';
+import ticketsCounter from './buyTickets.js';
 
 
 // Свайпер Welcome
@@ -59,7 +60,27 @@ function updateFraction(swiperInstance) {
 }
 
 
+console.log('asdas');
 
+// const valueBasicBook = document.getElementById("book-basic-value");
+// const valueSeniorBook = document.getElementById("book-senior-value");
+// document.getElementById("book-basic-increase").addEventListener("click", () => {
+//     valueBasicBook.textContent++;
+// });
+// console.log('asdas');
+// document.getElementById("book-basic-decrease").addEventListener("click", () => {
+//     if (valueBasicBook.textContent > 0) {
+//         valueBasicBook.textContent--;
+//     }
+// });
+// document.getElementById("book-senior-increase").addEventListener("click", () => {
+//     valueSeniorBook.textContent++;
+// });
+// document.getElementById("book-senior-decrease").addEventListener("click", () => {
+//     if (valueSenior.textContent > 0) {
+//         valueSenior.textContent--;
+//     }
+// });
 
 
 
@@ -67,4 +88,5 @@ document.addEventListener('DOMContentLoaded', () => {
     exploreImgChange();
     videoPlayer();
     randomGalary();
+    ticketsCounter();
 });

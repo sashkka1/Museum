@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Book Tickets</title>
+</head>
+
+<body>
+    <a href="../index.html#tickets" class="back-to-museum">
+        <img src="../assets/ico/booking-tickets/Close.svg" alt="Close">
+    </a>
+    <div class="book-tickets-block">
+        <div class="book-tickets" id="book-tickets">
+            <div class="book-tickets-left">
+                <img src="../assets/ico/logo.svg" alt="logo">
+                <h2>BOOKING TICKETS</h2>
+                <p>Tour to Louvre</p>
+                <div class="big-line"></div>
+                <div class="block">
+                    <div class="date-time">
+                        <div class="date">
+                            <p> Date</p>
+                            <img src="../assets/ico/booking-tickets/arrow.svg" alt="list">
+                        </div>
+                        <div class="time">
+                            <p> Time</p>
+                            <img src="../assets/ico/booking-tickets/arrow.svg" alt="list">
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Name" class="name">
+                    <input type="text" placeholder="E-male" class="email">
+                    <input type="text" placeholder="Phone" class="phone">
+                    <div class="ticket-type">
+                        <p> Ticket Type</p>
+                        <img src="../assets/ico/booking-tickets/arrow.svg" alt="list">
+                    </div>
+                    <div class="entry">
+                        <p>Entry Ticket</p>
+                        <div class="big-line"></div>
+                        <div class="entry-block">
+                            <div class="entry-left">
+                                <p>Basic 18+ (20$)</p>
+                                <p>Senior 65+ (20$)</p>
+                            </div>
+                            <div class="entry-right">
+                                <div class="book-senior-ticket-count">
+                                    <button class="book-basic-decrease" id="book-basic-decrease">—</button>
+                                    <span class="book-basic-value" id="book-basic-value">1</span>
+                                    <button class="book-basic-increase" id="book-basic-increase">+</button>
+                                </div>
+                                <div class="book-senior-ticket-count">
+                                    <button class="book-senior-decrease" id="book-senior-decrease">—</button>
+                                    <span class="book-senior-value" id="book-senior-value">1</span>
+                                    <button class="book-senior-increase" id="book-senior-increase">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-tickets-right">
+                <div class="overview-block">
+                    <div class="overview-left">
+                        <h3>Overview</h3>
+                        <p>Tour to Louvre</p>
+                        <div class="overview-day m-top-10">
+                            <img class="m-right15" src="../assets/ico/booking-tickets/date.svg" alt="Date">
+                            <p>Friday, August 19</p>
+                        </div>
+                        <div class="overview-time">
+                            <img class="m-right15" src="../assets/ico/booking-tickets/time.svg" alt="Time">
+                            <p>16:30</p>
+                        </div>
+                        <div class="overview-option">
+                            <img class="m-right15" src="../assets/ico/booking-tickets/check_circle_outline.svg"
+                                alt="Check">
+                            <p>Temporary exhibition</p>
+                        </div>
+                    </div>
+                    <div class="overview-right">
+                        <img src="../assets/ico/booking-tickets/Rectangle 4.svg" alt="Louvre img">
+                    </div>
+                </div>
+                <div class="basic-count m-top-10">
+                    <div class="basic-count-number m-right15" , id="basic-count-number"> 1</div>
+                    <div class="p">
+                        <p>Basic (20 $)</p>
+                        <p>20 $</p>
+                    </div>
+                </div>
+                <div class="senior-count">
+                    <div class="senior-count-number m-right15" id="senior-count-number">1</div>
+                    <div class="p">
+                        <p>Senior (10 $)</p>
+                        <p>10 $</p>
+                    </div>
+                </div>
+                <div class="big-line m-top-10 m-bottom15"></div>
+                <div class="total-count">
+                    <h3>Total:</h3>
+                    <h3>60 $</h3>
+                </div>
+                <form action="return false;" method="POST" class="book-form">
+                    <div class="cart-block">
+                        <div class="cart-front">
+                            <div class="cart-front-icon">
+                                <img src="../assets/ico/booking-tickets/Visa.svg" alt="Visa">
+                                <img src="../assets/ico/booking-tickets/Mastercard.svg" alt="Mastercard">
+                            </div>
+                            <div class="cart-number">
+                                <p>Card number</p>
+                                <input type="text" name="cart-number">
+                            </div>
+                            <div class="expiration-date">
+                                <p>Expiration date</p>
+                                <div class="block">
+                                    <input type="text" name="expiration-date-month">
+                                    <input type="text" name="expiration-date-year">
+                                </div>
+                            </div>
+                            <div class="cardholder-name">
+                                <p>Cardholder name</p>
+                                <input type="text" name="cardholder-name">
+                            </div>
+                        </div>
+                        <div class="cart-back">
+                            <div class="card-back-block">
+                                <p>CVC/CVV</p>
+                                <input type="text" name="cvv">
+                                <p>The last <br> 3 or 4 digits <br> on back <br> of the card</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" id="book-form-button">
+                        <p>Book</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/bookTickets.js"></script>
+</body>
+
+</html>

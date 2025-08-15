@@ -16,7 +16,8 @@
     <header>
         <div class="conteiner conteiner-header">
             <div class="logo">
-                <img src="./assets/ico/Logo-LOUVRE.png" alt="Логотип LOUVRE">
+                <img src="./assets/ico/logo-white.svg" alt="Logo">
+                <h2>LOUVRE</h2>
             </div>
             <nav class="naw-header">
                 <a href="#visiting">Visiting</a>
@@ -35,7 +36,7 @@
                 <div class="left-welcome">
                     <h2>WELCOME <br>TO THE LOUVRE</h2>
                     <h3>From the castle to the museum</h3>
-                    <a class="welcome-button" href="./tours/tour-welcome.html">Discover
+                    <a class="welcome-button" href="./html/tours/tour-welcome.html">Discover
                         the Louvre</a>
                 </div>
                 <div class="right-welcome">
@@ -76,42 +77,42 @@
                 <h2>VIRTUAL TOUR</h2>
                 <div class="big-line"></div>
                 <div class="places">
-                    <a class="place" href="./tours/tour1.html">
+                    <a class="place" href="./html/tours/tour1.html">
                         <img src="./assets/svg/virtual-tour/royal-palace.svg" alt="royal-palace">
                         <h3>ROYAL PALACE</h3>
                         <div class="small-line"></div>
                         <p class="first-p">360° Virtual Tour</p>
                         <p class="last-p">Google Street Panorama View</p>
                     </a>
-                    <a class="place" href="./tours/tour2.html">
+                    <a class="place" href="./html/tours/tour2.html">
                         <img src="./assets/svg/virtual-tour/denon-wing.svg" alt="denon-wing">
                         <h3>DENON WING</h3>
                         <div class="small-line"></div>
                         <p class="first-p">360° Virtual Tour</p>
                         <p class="last-p">Google Street Panorama View</p>
                     </a>
-                    <a class="place" href="./tours/tour3.html">
+                    <a class="place" href="./html/tours/tour3.html">
                         <img src="./assets/svg/virtual-tour/colonnade-perrault.svg" alt="colonnade-perrault">
                         <h3>COLONNADE PERRAULT</h3>
                         <div class="small-line"></div>
                         <p class="first-p">360° Virtual Tour</p>
                         <p class="last-p">Google Street Panorama View</p>
                     </a>
-                    <a class="place" href="./tours/tour4.html">
+                    <a class="place" href="./html/tours/tour4.html">
                         <img src="./assets/svg/virtual-tour/greek-hall.svg" alt="greek-hall">
                         <h3>GREEK HALL</h3>
                         <div class="small-line"></div>
                         <p class="first-p">360° Virtual Tour</p>
                         <p class="last-p">Google Street Panorama View</p>
                     </a>
-                    <a class="place" href="./tours/tour5.html">
+                    <a class="place" href="./html/tours/tour5.html">
                         <img src="./assets/svg/virtual-tour/mona-lisa.svg" alt="mona-lisa">
                         <h3>MONA LISA</h3>
                         <div class="small-line"></div>
                         <p class="first-p">360° Virtual Tour</p>
                         <p class="last-p">Google Street Panorama View</p>
                     </a>
-                    <a class="place" href="./tours/tour6.html">
+                    <a class="place" href="./html/tours/tour6.html">
                         <img src="./assets/svg/virtual-tour/night-palace.svg" alt="night-palace">
                         <h3>NIGTH PALACE</h3>
                         <div class="small-line"></div>
@@ -202,11 +203,57 @@
                 </div>
             </div>
         </section>
-
-
         <section class="tickets" id="tickets">
-
+            <div class="buy-tickets conteiner" id="buy-tickets">
+                <h2>BUY TICKETS</h2>
+                <div class="big-line"></div>
+                <div class="buy-tickets-block">
+                    <img src="./assets/img/Rectangle-tickets.svg" alt="img tickets">
+                    <form id="form-buy-ticket" action="./html/booking-tickets.html">
+                        <div class="form-left">
+                            <h3>Ticket Type</h3>
+                            <ul>
+                                <li id="permanent">
+                                    <input type="radio" name="gender" value="permanent" checked>
+                                    <p>Permanent exhibition</p>
+                                </li>
+                                <li id="temporary">
+                                    <input type="radio" name="gender" value="temporary">
+                                    <p>Temporary exhibition</p>
+                                </li>
+                                <li id="combined">
+                                    <input type="radio" name="gender" value="combined">
+                                    <p>Combined Admission</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-right">
+                            <h3>Amount</h3>
+                            <div class="counter">
+                                <p>Basic 18+</p>
+                                <div class="buy-basic-ticket-count">
+                                    <button type="button" class="buy-basic-decrease" id="buy-basic-decrease">—</button>
+                                    <span class="buy-basic-value" id="buy-basic-value">1</span>
+                                    <button type="button" class="buy-basic-increase" id="buy-basic-increase">+</button>
+                                </div>
+                                <p>Senior 65+</p>
+                                <div class="buy-senior-ticket-count">
+                                    <button type="button" class="buy-senior-decrease"
+                                        id="buy-senior-decrease">—</button>
+                                    <span class="buy-senior-value" id="buy-senior-value">1</span>
+                                    <button type="button" class="buy-senior-increase"
+                                        id="buy-senior-increase">+</button>
+                                </div>
+                            </div>
+                            <h3 class="buy-ticket-total m-top-25 ">Total $ <p id="buy-ticket-total">220</p>
+                            </h3>
+                            <input id="buy-ticket-button" class="m-top-25" type="submit" value="Buy Now">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
+        <section class="parallax"></section>
         <section class="contacts" id="contacts">
 
         </section>

@@ -5,19 +5,56 @@
     border: 0;
 }
 
+.m-top-25 {
+    margin-top: 25px;
+}
+
+.m-top-15 {
+    margin-top: 15px;
+}
+
+.m-top-10 {
+    margin-top: 10px;
+}
+
+.m-bottom15 {
+    margin-bottom: 15px;
+}
+
+.m-right15 {
+    margin-right: 15px;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto/Roboto-Bold.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto/Roboto-Medium.ttf') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
 a {
     text-decoration: none;
     color: white;
-}
-
-.tours {
-    width: 100%;
-    height: 100%;
-}
-
-.tours-body {
-    width: 99.2vw;
-    height: 100vh;
 }
 
 h2 {
@@ -37,6 +74,28 @@ section {
 .conteiner {
     width: 1440px;
     display: flex;
+}
+
+.logo {
+    width: 200px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo h2 {
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 5px;
+    font-size: 28px;
+    padding: 0;
+}
+
+.logo img {
+    margin-bottom: 5px;
 }
 
 .conteiner-header {
@@ -213,7 +272,7 @@ header {
 }
 
 .swiper-welcome .swiper-button-prev {
-    background-image: url('../assets/ico/button-left.png');
+    background-image: url('../assets/ico/button-left.svg');
     position: relative;
     top: 0;
     right: 0;
@@ -226,7 +285,7 @@ header {
 }
 
 .swiper-welcome .swiper-button-next {
-    background-image: url('../assets/ico/button-right.png');
+    background-image: url('../assets/ico/button-right.svg');
     position: relative;
     top: 0;
     right: 0;
@@ -246,6 +305,16 @@ header {
 .swiper-button-welcome {
     width: 100%;
     height: 100%;
+}
+
+.tours {
+    width: 100%;
+    height: 100%;
+}
+
+.tours-body {
+    width: 99.2vw;
+    height: 100vh;
 }
 
 .visiting {
@@ -635,5 +704,547 @@ header {
 }
 
 .tickets {
-    height: 100px;
+    width: 100%;
+    height: 745px;
+    margin: 75px 0 75px 0;
+    position: relative;
+}
+
+.tickets h2 {
+    color: #9d8665;
+}
+
+.tickets .big-line {
+    margin-bottom: 75px;
+}
+
+.buy-tickets {
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-tickets-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.buy-tickets-block form {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-tickets-block h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: auto;
+    letter-spacing: 0%;
+    color: #030303;
+}
+
+.buy-tickets-block ul {
+    margin-top: 50px;
+}
+
+.buy-tickets-block li {
+    display: flex;
+    margin-top: 24px;
+}
+
+.buy-tickets-block li p {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+input[type="radio"] {
+    accent-color: black;
+    width: 17px;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 23px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 13.5px;
+}
+
+.counter p {
+    font-size: 24px;
+}
+
+.buy-basic-ticket-count,
+.buy-senior-ticket-count {
+    width: 144px;
+    height: 44px;
+    border: solid black 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy-basic-value,
+.buy-senior-value {
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.buy-basic-decrease,
+.buy-basic-increase,
+.buy-senior-decrease,
+.buy-senior-increase {
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.buy-ticket-total {
+    display: flex;
+}
+
+input[type="submit"] {
+    width: 175px;
+    height: 50px;
+    background-color: #030303;
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+/* for booking-tickets page */
+
+.book-tickets-block {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.book-tickets {
+    background-color: white;
+    display: flex;
+    gap: 40px;
+}
+
+.book-tickets-left {
+    width: 400px;
+    height: 663px;
+}
+
+.book-tickets-left h2 {
+    font-size: 50px;
+    letter-spacing: 0px;
+    line-height: 53px;
+    color: #9d8665;
+    padding-bottom: 15px;
+}
+
+.book-tickets-left p {
+    color: #710707;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.book-tickets-left .big-line {
+    margin: 10px 0 60px 0;
+}
+
+.book-tickets-left .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.book-tickets-left .date-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-time p,
+.book-tickets-left .ticket-type p,
+.book-tickets-left .block input::placeholder {
+    color: #030303;
+}
+
+.book-tickets-left .date,
+.book-tickets-left .time,
+.book-tickets-left .name,
+.book-tickets-left .email,
+.book-tickets-left .phone,
+.book-tickets-left .ticket-type {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    border: solid 2px black;
+    height: 45px;
+    padding-left: 35px;
+}
+
+
+.book-tickets-left .date,
+.book-tickets-left .time {
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.book-tickets-left .date {
+    background: url('../assets/ico/booking-tickets/date.svg') no-repeat 8px center;
+}
+
+.book-tickets-left .time {
+    background: url('../assets/ico/booking-tickets/time.svg') no-repeat 8px center;
+}
+
+.book-tickets-left .name,
+.book-tickets-left .email,
+.book-tickets-left .phone {
+    width: 362.6px;
+}
+
+.book-tickets-left .name {
+    background: url('../assets/ico/booking-tickets/name.svg') no-repeat 8px center;
+}
+
+.book-tickets-left .email {
+    background: url('../assets/ico/booking-tickets/email.svg') no-repeat 8px center;
+}
+
+.book-tickets-left .phone {
+    background: url('../assets/ico/booking-tickets/tel.svg') no-repeat 8px center;
+}
+
+.book-tickets-left .ticket-type {
+    background: url('../assets/ico/booking-tickets/Vector.svg') no-repeat 8px center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 352.6px;
+    padding-right: 10px;
+}
+
+.entry {
+    border: solid 2px black;
+    width: 377.6px;
+    padding: 10px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+}
+
+.entry>p {
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: 0%;
+    font-size: 18px;
+    padding: 0;
+    color: #9d8665;
+}
+
+.entry .big-line {
+    margin: 5px auto;
+}
+
+.entry-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.entry-left,
+.entry-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.entry-left p,
+.entry-right {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #030303;
+}
+
+
+.book-basic-ticket-count,
+.book-senior-ticket-count {
+    width: 105px;
+    height: 25px;
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-basic-value,
+.book-senior-value {
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.book-basic-decrease,
+.book-basic-increase,
+.book-senior-decrease,
+.book-senior-increase {
+    width: 35px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+.book-tickets-right {
+    border: solid 2px black;
+    width: 480px;
+    height: 613px;
+    padding: 25px;
+}
+
+.overview-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-left h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.overview-left>p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #710707;
+}
+
+.overview-day,
+.overview-time,
+.overview-option {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.overview-day p,
+.overview-time p,
+.overview-option p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.basic-count,
+.senior-count {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.basic-count-number,
+.senior-count-number {
+    width: 32px;
+    height: 19px;
+    background-color: #030303;
+    color: #A4A4A3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic-count .p,
+.senior-count .p,
+.total-count {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.total-count h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.book-form {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.book-form button {
+    width: 220px;
+    height: 45px;
+    background-color: #710707;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+}
+
+.cart-block {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.cart-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 196px;
+    padding: 15px;
+    padding: 0 15px 15px 15px;
+    background-color: #BCBCBC;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.cart-front-icon {
+    position: absolute;
+    top: 34px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 63px;
+}
+
+.cart-number input {
+    width: 215px;
+    height: 35px;
+}
+
+.expiration-date .block {
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.expiration-date input {
+    width: 100px;
+    height: 35px;
+}
+
+.cardholder-name input {
+    width: 320px;
+    height: 35px;
+}
+
+.cart-front p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px 0 5px 0;
+}
+
+
+
+
+.cart-back {
+    position: absolute;
+    width: 360px;
+    height: 211px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #A4A4A3;
+    border-radius: 5px;
+}
+
+.card-back-block {
+    border-top: solid black 45px;
+    position: absolute;
+    height: 111px;
+    padding: 15px 0 15px 0;
+    right: 0;
+    top: 25px;
+    width: 120px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-back-block p:nth-of-type(1) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.card-back-block p:nth-of-type(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.card-back-block input {
+    width: 75px;
+    height: 35px;
+}
+
+
+
+
+
+.back-to-museum {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+
+
+
+.parallax {
+    width: 100%;
+    height: 500px;
+    background-color: #710707;
 }
