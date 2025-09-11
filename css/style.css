@@ -5,6 +5,15 @@
     border: 0;
 }
 
+
+:root {
+    --dark-red: #710707;
+    --font-gold: #9d8665;
+    --font1: 80px;
+    --font2: 32px;
+    /* var(--font2) */
+}
+
 .m-top-45 {
     margin-top: 45px;
 }
@@ -75,7 +84,7 @@ a {
 h2 {
     font-family: 'Forum', sans-serif;
     font-weight: 400;
-    font-size: 80px;
+    font-size: var(--font1);
     line-height: 90px;
     letter-spacing: 5px;
     padding-bottom: 25px;
@@ -180,7 +189,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #710707;
+    background-color: var(--dark-red);
     width: 360px;
     height: 75px;
     font-family: 'Roboto', sans-serif;
@@ -274,7 +283,7 @@ header {
 }
 
 .swiper-welcome .swiper-pagination-bullet-active {
-    background: #9d8665;
+    background: var(--font-gold);
     opacity: 1;
 }
 
@@ -337,7 +346,7 @@ header {
 }
 
 .visiting h2 {
-    color: #9d8665;
+    color: var(--font-gold);
 }
 
 .container-visiting {
@@ -347,13 +356,13 @@ header {
 .big-line {
     width: 100%;
     height: 3px;
-    background-color: #710707;
+    background-color: var(--dark-red);
 }
 
 .small-line {
     width: 300px;
     height: 2px;
-    background-color: #710707;
+    background-color: var(--dark-red);
     margin-top: 10px;
 }
 
@@ -371,7 +380,7 @@ header {
 .place h3 {
     font-family: 'Forum', sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: var(--font2);
     line-height: auto;
     letter-spacing: 5px;
     padding-top: 25px;
@@ -475,7 +484,7 @@ header {
 }
 
 .video h2 {
-    color: #9d8665;
+    color: var(--font-gold);
     padding: 0;
 }
 
@@ -572,8 +581,8 @@ header {
 
 #volume {
     background: linear-gradient(to right,
-            #710707 100%,
-            #710707 0%,
+            var(--dark-red) 100%,
+            var(--dark-red) 0%,
             #C4C4C4 0%,
             #C4C4C4 0%);
     -webkit-appearance: none;
@@ -726,7 +735,7 @@ header {
 }
 
 .tickets h2 {
-    color: #9d8665;
+    color: var(--font-gold);
 }
 
 .tickets .big-line {
@@ -820,7 +829,7 @@ input[type="radio"] {
     width: 44px;
     height: 44px;
     background-color: white;
-    font-size: 32px;
+    font-size: var(--font2);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -865,12 +874,12 @@ input[type="submit"] {
     font-size: 50px;
     letter-spacing: 0px;
     line-height: 53px;
-    color: #9d8665;
+    color: var(--font-gold);
     padding-bottom: 15px;
 }
 
 .book-tickets-left p {
-    color: #710707;
+    color: var(--dark-red);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -974,7 +983,7 @@ input[type="submit"] {
     letter-spacing: 0%;
     font-size: 18px;
     padding: 0;
-    color: #9d8665;
+    color: var(--font-gold);
 }
 
 .entry .big-line {
@@ -1053,14 +1062,14 @@ input[type="submit"] {
 .overview-left h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 32px;
+    font-size: var(--font2);
 }
 
 .overview-left>p {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 22px;
-    color: #710707;
+    color: var(--dark-red);
 }
 
 .overview-day,
@@ -1090,7 +1099,7 @@ input[type="submit"] {
 
 .basic-count-number,
 .senior-count-number {
-    width: 32px;
+    width: var(--font2);
     height: 19px;
     background-color: #030303;
     color: #A4A4A3;
@@ -1118,7 +1127,7 @@ input[type="submit"] {
 .total-count h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: var(--font2);
 }
 
 .book-form {
@@ -1133,7 +1142,7 @@ input[type="submit"] {
 .book-form button {
     width: 220px;
     height: 45px;
-    background-color: #710707;
+    background-color: var(--dark-red);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 22px;
@@ -1275,7 +1284,7 @@ input[type="submit"] {
 }
 
 .contacts h2 {
-    color: #9d8665;
+    color: var(--font-gold);
 }
 
 .contacts-block {

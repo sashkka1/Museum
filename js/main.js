@@ -4,13 +4,24 @@ import randomGalary from './galery.js';
 import ticketsCounter from './buyTickets.js';
 import map from './map.js';
 
-
+document.addEventListener("click", () => {
+    // проверяем, открыт ли уже нужный сайт
+    https://sashkka1.github.io/rsschool-cv/
+    if (window.parent.location.href == "https://sashkka1.github.io/rsschool-cv/") {
+        window.parent.location.href = "http://127.0.0.1:5501/Museum/index.html";
+    }
+    // если совпадает — ничего не делаем
+});
 // Свайпер Welcome
 const swiper = new Swiper('.swiper-welcome', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
 
+    autoplay: {
+        delay: 3000, // задержка между сменой слайдов (в мс)
+        disableOnInteraction: false, // не останавливать после взаимодействия
+    },
     // If we need pagination
     pagination: {
         el: '.main-pagination',
