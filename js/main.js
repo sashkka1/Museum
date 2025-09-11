@@ -4,11 +4,12 @@ import randomGalary from './galery.js';
 import ticketsCounter from './buyTickets.js';
 import map from './map.js';
 
+// for work in my cv
 document.addEventListener("click", () => {
     // проверяем, открыт ли уже нужный сайт
-    https://sashkka1.github.io/rsschool-cv/
-    if (window.parent.location.href == "https://sashkka1.github.io/rsschool-cv/") {
-        window.parent.location.href = "http://127.0.0.1:5501/Museum/index.html";
+
+    if (window.parent.location.href !== "https://sashkka1.github.io/Museum/") {
+        window.parent.location.href = "https://sashkka1.github.io/Museum/";
     }
     // если совпадает — ничего не делаем
 });
