@@ -18,9 +18,9 @@ const swiper = new Swiper('.swiper-welcome', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
-
+    speed: 1000,
     autoplay: {
-        delay: 3000, // задержка между сменой слайдов (в мс)
+        delay: 5000, // задержка между сменой слайдов (в мс)
         disableOnInteraction: false, // не останавливать после взаимодействия
     },
     // If we need pagination
